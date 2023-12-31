@@ -18,7 +18,7 @@ body {
 
 header {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
@@ -30,24 +30,23 @@ header {
 
 header nav {
   display: flex;
-  justify-content: space-evenly;
   list-style-type: none;
   margin-right: 20px;
+  width: 50%;
+  justify-content: space-between;
 }
 
-header a {
+header .navbar {
   text-decoration: none;
-  margin-right: 20px;
   color: whitesmoke;
 }
 
 .navbar {
-  flex-shrink: 0;
   transition: all 0.3s ease-out;
 }
 
 header .navbar:hover {
-  padding: 15px;
+  padding: 10px;
   background-color: rgb(216, 82, 82);
 }
 
