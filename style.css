@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 1000px;
+  padding-top: 65px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(35, 35, 35);
+  color: whitesmoke;
+}
+
+header {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 65px;
+  width: 100%;
+  background-color: rgb(213, 35, 35);
+  z-index: 3;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+header a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: whitesmoke;
+}
+
+.navbar {
+  flex-shrink: 0;
+  transition: all 0.3s ease-out;
+}
+
+header .navbar:hover {
+  padding: 15px;
+  background-color: rgb(216, 82, 82);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  padding-top: 50px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  padding: 50px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.about-me p {
+  width: 100%;
+  max-width: 600px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  padding: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.projects p {
+  width: 100%;
+  max-width: 600px;
+}
+
+.pfp {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px rgb(44, 154, 209);
+}
+
+.project-link {
+  text-decoration: none;
+  color: rgb(44, 154, 209);
+}
+
+.projects {
+  background-color: #45567d;
+}
+.project-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-container {
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.image-container div {
+  background-color: rgb(87, 87, 87);
+  text-align: center;
+  margin-top: -5px;
+  padding: 10px;
+  width: 100%;
+}
+
+@media all and (max-width: 750px) {
+  .pfp {
+    width: 300px;
+    height: 300px;
+  }
+
+  .project-image {
+    max-width: 300px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .pfp {
+    width: 200px;
+    height: 200px;
+  }
+
+  .project-image,
+  .image-container div {
+    max-width: 200px;
+  }
+}
